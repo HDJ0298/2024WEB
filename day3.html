@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day3</title>
+</head>
+<body>
+    <h1>Heading level 1</h1> <!--제일큰거-->
+  <h2>Heading level 2</h2>
+  <h3>Heading level 3</h3>
+  <h4>Heading level 4</h4>
+  <h5>Heading level 5</h5>
+  <h6>Heading level 6</h6> <!-- 제일 작은거-->
+  <p>하나의 문단을 작성할때는 p태그를 사용!</p>
+  <p>문단을 나누고싶을때는<br/> br을 씁니다!</p>
+  <blockquote cite="http://www.naver.com">
+    <p>문단 단위 인용문</p>
+  </blockquote cite> <!--처음보는 태그-->
+  <q cite="http://www.naver.com">
+    <p>짧은 인용문</p>
+  </q>
+  <ins>추가 텍스트</ins> <!--아래밑줄-->
+  <del>삭제 텍스트</del> <!--삭제(글줄)-->
+  <p>공기의 원소 기호는 H<sub>2</sub>O</p> <!--아래첨자-->
+  <p>4<sup>2</sup>은 16입니다.</p> <!--위 첨자-->
+  <div> <!--블록 요소와 인라인 요소를 그룹으로 묶을때-->
+    <p>영화 소개</p>
+    <p>페이지</p>
+  </div>
+  <div>
+    <p>프로그램 소개</p>
+    <p>페이지</p>
+  </div>
+  <div> 
+    <p>영화 소개</p>
+    <p>이번 영화의 <span>하이라이트</span> 장면은 바로 여기입니다.</p> <!--span태그는 인라인요소를 그룹으로 묶을때 사용-->
+  </div>
+  <h1>판매중인 과일</h1>
+  <ul><!--순서가 없는 비순서형 목록생성 .으로 나옴-->
+      <li>바나나</li>
+      <li>사과</li>
+      <li>수박</li>
+  </ul>
+  <h1>오늘 할일</h1>
+  <ol><!--순서가 있는 목록 생성-->
+    <li>코딩공부하기</li>
+    <li>git 올리기</li>
+    <li>운동 하기</li>
+  </ol>
+  <dl><!--정의형 목룍을 만들때 사용!-->
+    <dt>용어1</dt>
+        <dd>용어1 설명</dd>
+    <dt>용어2</dt>
+        <dd>용어2 설명</dd>
+  </dl>
+  <a href="https://blog.naver.com/yurangcorp"> <!--이미지 넣기 & 이미지 누르면 링크 이동-->
+  <img src="data:image/png;base64,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" alt="망곰이 블로그">
+    </a>
+    <strong>텍스트 강조는 strong</strong>
+    <em>기울어지는 텍스트는 em</em>
+</body>
+</html>
