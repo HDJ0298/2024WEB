@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day6</title>
+    <style>
+        *{    /* 전체 선택 * */
+          color:red;
+        }
+        p{ /* 원하는 태그만 선택 * */
+            color: pink;
+        }
+        #select {
+            color: green;
+        }
+        .day6 {
+            color: orange;
+        }
+        a[href]{
+            color: purple;
+            display: block;
+        }
+        a[target="_blank"]{
+            color: rosybrown;
+            display: block;
+        }
+
+        /*
+        1. 스타일 여러개 묶을수도있음
+        p,#select,.day6{
+            스타일들
+        }
+
+        2.부모자식 관계
+         .day6 > p  == 속성값이 day6인요소와 자식관계에 있는 p속성에 적용
+
+        3.하위 선택자   === div요소안에 밑에 p들 스타일
+        div p{
+            스타일
+        }
+
+        4. 인접한형제요소  == h1과 인접한 h2에만 스타일 적용 만약 h2,h1,h2 순서로 있으면 h1다음인 h2에만 스타일적용
+        h1+h2{
+            스타일들
+        }
+
+        5.일반 형제 선택자  == 앞뒤로 모두 스타일적용    h1,h2,h2, 순서로있으면 h1~h2까지 모두 스타일적용
+        h1~h2{
+            스타일들
+        }
+        */
+
+        p::before{     /*가상요소 선택자 :: 두개*/
+            content: '<p>';
+        }
+        p::after{
+            content: '</p>';
+        }
+
+        a:link{  /* 가상 클래스 선택자  : 한개만*/
+            color: orange;   /*방문전*/
+        }
+        a:visited{
+            color: green; /*방문후*/
+        }
+
+        p:hover{   /*동적 가상 클래스*/
+            color: gray;
+        }
+        p:active{
+            color: blueviolet;
+        }
+        input:focus{
+            color: red;
+        }
+        input:checked+label{
+            color: red;
+        }
+        input:disabled,button:disabled{
+            background-color: #ccc;
+        }
+        input:enabled,button:enabled{
+            background-color: #ccc;
+        }
+        p:nth-child(1){
+      color:red;
+    }
+      </style>
+</head>
+<body>
+    <h1>전체 선택자 적용</h1>
+    <p>태그선택자 적용</p>
+    <p id="select">아이디 선택자 적용(중복안됨)</p>
+    <p class="day6">클래스 선택자 적용(중복가능)</p>
+    <a href="#">a태그의 href속성에 적용</a>
+    <a href="#" target="_blank">a태그의 target속성에 적용</a>
+    <input type="text">
+    <button >버튼</button>
+    <input type="text" disabled>
+    <button disabled>버튼</button>
+    <input type="text">
+    <button >버튼</button><br/>
+    <p>lorem 0</p>
+    <div>
+      <p>lorem 1</p>
+      <p>lorem 2</p>
+    </div>
+    <div>
+      <p>lorem 3</p>
+      <p>lorem 4</p>
+    </div>
+</body>
+</html>
