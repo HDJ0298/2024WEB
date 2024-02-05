@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            border: 1px solid black;
+        }
+        html{
+            border: 1px solid red;
+        }
+        body{
+            border: 1px solid blue;
+        }
+        div{
+            height: 100px;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        #id{
+            background-color: red;
+        }
+        .class{
+            background-color: green;
+        }
+        div > div{
+            background-color: yellow;
+        }
+        .class2{
+            background-color: black;
+        } /* id랑 class 같이 있을 경우 id가 먼저 설정됐기때문에 id값으로 나옴*/
+    </style>
+</head>
+<body>
+    <div></div>
+    <div id="id" class="class2">아이디</div>
+    <div class="class">클래스</div>
+    <div>
+        <div>자식</div>
+    </div>
+    <div></div>
+</body>
+</html>
+
+<!--
+    전체 선택자 *
+    태그 선택자 h1
+    아이디 선택자 #id
+    클래스 선택자 .class
+    자식 선택자  div > div
+-->
