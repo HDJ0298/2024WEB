@@ -1,0 +1,14 @@
+.parent{
+    display: flex;
+    flex-direction: row;  /*세로column   가로는 row*/
+    border: 1px solid black;
+    justify-content: space-between; /*왼쪽끝 배치는 start 오른쪽끝부터 배치는 end 가운데는 center 띄우기는 space-between*/
+    height: 200px;
+    align-items: center; /*맨위배치 start 맨밑배치 end  가운데 center*/
+}
+
+.child{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
