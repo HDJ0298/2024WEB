@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8"> 
+  <title>Document</title>   
+  <link rel="stylesheet" href="../bear_css/note.css">
+</head>
+<body>
+  <form class="memo-container" method="post" action="http://localhost:3000/create"> 
+    <header class="memo-header">
+      <div>TITLE</div>
+    </header>
+    <div class="memo-slogan">
+      NOTE YOUR DAY
+    </div>
+    <div class="memo-user-input">
+      <div class="memo-input">
+        <span>제목</span>
+        <input type="text" class="title" name="title" placeholder="제목을 입력하세요.">
+      </div>
+
+      <div class="memo-input">
+        <span>부제</span>
+        <input type="text" class="description" name="description" placeholder="부제를 입력하세요">
+      </div>
+
+      <div class="memo-input memo-content">
+        <span>내용</span>
+        <textarea class="content" name="content"></textarea>
+      </div>
+
+    </div>
+
+    <div class="button-wrapper">
+      <a href="/FRONT/bear_index.html">
+        <button class="cancel-button" type="button">취소하기</button>
+      </a>
+      <button class="create-button" type="submit">생성하기</button>
+      <button class="modify-button" type="button">수정하기</button>
+    </div>
+  </form>
+  <script src="../js/note.js"></script>
+</body>
+</html>
+

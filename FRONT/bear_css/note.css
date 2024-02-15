@@ -1,0 +1,72 @@
+*{
+    padding:0;
+    margin:0;
+  }
+  .memo-container{
+    width:800px;
+    margin:0 auto;
+  }
+  .memo-header{
+    padding:15px 0;
+    font-size:30px;
+    font-weight: 900;
+  }
+  .memo-slogan{
+    background-color: palevioletred;
+    padding: 17px;
+    text-align: center;
+    color:white;
+    font-size:30px;
+    font-weight: bolder;
+    margin-top:40px;
+  }
+  .memo-user-input{
+    margin-top:40px;
+  }
+  .memo-input{
+    display: flex;
+    flex-direction: column;
+    margin-bottom:30px;
+  }
+  .memo-input > span{
+    
+  }
+  .memo-input > input{
+    outline-style: none;
+    border:none;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    padding:15px 0px;
+  }
+  .memo-input > textarea{
+    margin-top: 10px;
+    border:1px solid rgba(0,0,0,0.2);
+    resize:none;
+    outline: none;
+    border-radius: 5px;
+    padding:5px;
+    height:300px;
+  }
+  .memo-content{
+    margin-top:50px;
+  }
+  .button-wrapper{
+    display: flex;
+    justify-content: end;
+    gap:10px;
+  }
+  .button-wrapper > button,
+  .button-wrapper > a > button{
+    padding:10px 20px;
+    border:1px solid rgba(0,0,0,0.2);
+    border-radius: 5px;;
+  }
+  .create-button{
+    background-color: palevioletred;
+    color:white;
+    display: none;
+  }
+  .modify-button{
+    background-color: #2725D2;
+    color:white;
+    display: none;
+  }
